@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INMET API</title>
+    <!-- Bootstrap CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./dist/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid" align="center">
+        <div class="col-6 col-md-8 themed-grid-col">
+            <h3>INMET API</h3>
+            <div id="liveAlertPlaceholder"></div>
+            <br>
+            </div>
+            <br>
+            <form id="form-carrega-imagem">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <label for="satelites" class="form-label"> &#128752; Satélite</label>
+                        <select class="form-select" name="satelites" id="satelites"></select>
+                      </div>
+                      <div class="col-sm">
+                        <label for="area-satelite" class="form-label">&#128506; Área</label>
+                        <select class="form-select" name="area-satelite" id="area-satelite"></select>
+                      </div>
+                      <div class="col-sm">
+                        <label for="parametros" class="form-label">&#9881; Parâmetros disponíveis</label>
+                        <select class="form-select" name="parametros" id="parametros"></select>
+                      </div>
+                      <div class="col-sm">
+                        <label for="horarios" class="form-label">&#128356; Horários disponíveis</label>
+                        <select class="form-select" name="horarios" id="horarios"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <input id="btn-carrega" class="btn btn-primary" type="submit" value="Gerar imagem">
+            </form>
+            <br>
+            <form id="form-gera-gif">
+                <input id="btn-gera-gif" class="btn btn-primary" type="submit" value="Gerar GIF com os dados selecionados">
+            </form>
+            <br>
+            <form id="form-limpa-img">
+            </form>
+            <br>
+            <div id="img-result">
+            <br>
+        </div>
+    </div>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="text-muted">&copy; 2021 Ozebe, feito com &#128150;</span>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>
+<script src="./dist/js/bootstrap.bundle.min.js"></script>
+<script src="./dist/js/gif.js"></script>
+<script src="./dist/js/alert.js"></script>
+<script type="module" src="./dist/js/index.js"></script>
